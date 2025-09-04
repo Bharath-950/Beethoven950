@@ -9,11 +9,11 @@ def create_product(product):
 def read_all():
     return products
 def read_by_id(id):
-    for I in range(len(id)):
-        if products[I] == id:
-         return products[I]
+    for product in products:
+        if products.id == id:
+         return product
     return None  
-def update(id,product):
+def update(product):
     global products
     old_product = read_by_id(product.id)
     if old_product == None:
